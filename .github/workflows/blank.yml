@@ -10,21 +10,21 @@ on:
   workflow_dispatch:
     inputs:
       ambiente:
-      type: environment
+        type: environment
 
       nome:
         default: Dias
         required: true
 
-      name: 
+      apelido: 
         default: Matos
         required: true
         
-    opção:
-      type: boleano
-      description: Confirme a execução!
+      opcao:
+        type: boolean
+        description: Confirme a execução!
 
-    cidade:
+      cidade:
         type: choice
         options:
         - Coimbra
