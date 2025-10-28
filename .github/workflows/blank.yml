@@ -9,24 +9,28 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
     inputs:
-      name: Ambiente
+      ambiente:
       type: environment
 
-      name: Nome
-      default: Dias
+      nome:
+        default: Dias
+        required: true
 
-      name: Apelido
-      default: Matos
-
-      name: confirme 
+      name: 
+        default: Matos
+        required: true
+        
+    opção:
       type: boleano
+      description: Confirme a execução!
 
-      name: Cidade
-      type: choice
-      - Coimbra
-      - Braga
-      - Porto
-      - Lisboa
+    cidade:
+        type: choice
+        options:
+        - Coimbra
+        - Braga
+        - Porto
+        - Lisboa
       
       
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
