@@ -46,4 +46,4 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          python some.py 
+          python some.py  ${{ github.event.inputs.v1 }}  ${{ github.event.inputs.v2 }}
